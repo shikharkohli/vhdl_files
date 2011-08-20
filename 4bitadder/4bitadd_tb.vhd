@@ -9,7 +9,7 @@ architecture fourbitadder_arch_tb of fourbitadder_tb is
     signal txin,tyin,tsout:bit_vector(3 downto 0);
     signal tcin,tcout:bit;
     begin
-    inst:fourbitadder port map(txin,tyin,tcin,tsout,tcout);
+    inst: fourbitadder port map(txin,tyin,tcin,tsout,tcout);
     process
         begin
             txin <= "0010";
