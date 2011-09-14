@@ -9,9 +9,10 @@ end entity;
 
 architecture system_arch of system is
     --signal shleft_arch,shright_arch,ashright_arch,nochange_arch:std_logic_vector(7 downto 0);
-    signal temp:std_logic_vector(8 downto 0);
+    --signal temp:std_logic_vector(8 downto 0);
     begin
         process
+        variable temp:bit;
         begin
           temp <= '0'&input;
           --temp(8) <= '0';
